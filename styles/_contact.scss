@@ -1,0 +1,12 @@
+.contact { 
+    scroll-margin-top: 80px;
+    background-color: $secondary-color;
+    text-align: center;
+
+
+.contact-form { 
+    display: flex; 
+    flex-direction: column; 
+    gap: $spacing-md; 
+}
+}

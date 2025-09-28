@@ -1,0 +1,63 @@
+@import 'variables';
+@import 'mixins';
+@import 'header';
+@import 'about';
+@import 'projects';
+@import 'contact';
+@import 'footer';
+
+
+* { 
+    text-decoration: none;
+    box-sizing: border-box; 
+    margin: auto; 
+    padding: auto; 
+}
+
+body { 
+    font-family: $font-primary; 
+    font-size: $font-size-base; 
+    color: $text-color;
+    background: $background-color;
+    margin-left: 0px;
+
+}
+
+section { 
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+
+#home { 
+    background-image: url('../assets/images/arabesco.jpg');
+    background-size: contain;
+    background-repeat: repeat-x repeat-y;
+    background-position: center;
+
+}
+
+.hero {
+    height: 80vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    padding-top: 55px;
+    margin-top: 55px;
+
+}
+
+.hero-img { 
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    position: static;
+    border: 7px solid $white;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+
+}

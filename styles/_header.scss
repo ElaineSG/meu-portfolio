@@ -1,0 +1,70 @@
+.header { 
+    background-color: $primary-color;
+    color: $secondary-color;
+    padding: $spacing-sm; 
+    position: fixed; 
+    width: 100%;
+    top: 0; 
+    z-index: 1000;
+    margin-left: auto;
+    margin-right: auto;
+    
+.nav { @include flex-center(row); 
+    justify-content: space-between; 
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list { 
+    display: none !important;
+}
+
+.menu-toggle { 
+    display: block !important;
+}
+}
+
+.nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 32px; // ajuste o valor conforme desejar
+  padding: 0;
+  margin: 0;
+}
+
+.menu-projetos {
+    position: relative;
+}
+
+.submenu { 
+    display: none !important;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: $white;
+    box-shadow: $box-shadow;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 140px;
+    z-index: 10;
+}
+
+.submenu li a { 
+    display: block;
+    padding: 10px 16px;
+    color: $text-color;
+    text-align: left;
+    text-decoration: none;
+}
+
+.submenu li a:hover { 
+    background-color: $secondary-color;
+}
+
+.menu-projetos:hover .submenu {
+    display: block !important;
+}

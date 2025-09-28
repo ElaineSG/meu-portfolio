@@ -1,0 +1,21 @@
+.projects { 
+    scroll-margin-top: 80px;
+    background-color: $background-color;
+    color: $text-color;
+    text-align: center;
+
+.project-grid { 
+    display: flex; 
+    gap: $spacing-md; 
+    grid-template-columns: 1fr;
+    margin-left: auto; 
+    margin-right: auto;
+}
+}
+
+.projects-img {
+    border: 7px solid $gray-light;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+    margin-bottom: $spacing-sm;
+}

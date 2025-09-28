@@ -1,0 +1,171 @@
+.header {
+  background-color: #20002c;
+  color: #29888b;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header .nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.header .nav-list {
+  display: none !important;
+}
+.header .menu-toggle {
+  display: block !important;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 32px;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-projetos {
+  position: relative;
+}
+
+.submenu {
+  display: none !important;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  min-width: 140px;
+  z-index: 10;
+}
+
+.submenu li a {
+  display: block;
+  padding: 10px 16px;
+  color: #350132;
+  text-align: left;
+  text-decoration: none;
+}
+
+.submenu li a:hover {
+  background-color: #29888b;
+}
+
+.menu-projetos:hover .submenu {
+  display: block !important;
+}
+
+.about {
+  scroll-margin-top: 80px;
+  display: block;
+  flex-wrap: wrap;
+  background-color: #29888b;
+  text-align: center;
+  text-wrap: wrap;
+}
+
+.projects {
+  scroll-margin-top: 80px;
+  background-color: #bea6c9;
+  color: #350132;
+  text-align: center;
+}
+.projects .project-grid {
+  display: flex;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.projects-img {
+  border: 7px solid #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+.contact {
+  scroll-margin-top: 80px;
+  background-color: #29888b;
+  text-align: center;
+}
+.contact .contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.footer {
+  background-color: #20002c;
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+}
+
+* {
+  text-decoration: none;
+  box-sizing: border-box;
+  margin: auto;
+  padding: auto;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  color: #350132;
+  background: #bea6c9;
+  margin-left: 0px;
+}
+
+section {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#home {
+  background-image: url("../assets/images/arabesco.jpg");
+  background-size: contain;
+  background-repeat: repeat-x repeat-y;
+  background-position: center;
+}
+
+.hero {
+  height: 80vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  padding-top: 55px;
+  margin-top: 55px;
+}
+
+.hero-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  position: static;
+  border: 7px solid #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/*# sourceMappingURL=main.css.map */
